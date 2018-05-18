@@ -1,0 +1,25 @@
+<p>
+  server works!
+</p>
+
+<!-- <input type="text" class="form-control" (input)="updateServer($event);"/> -->
+
+<!-- <input type="text" class="form-control" [(ngModel)]="serverName"/> -->
+
+<input type="text" class="form-control" #serverNameInput/>
+
+
+<button class="btn btn-prm" [disabled]="isDisabled" (click)="addServer();">
+  Add Server
+</button>
+
+
+<button class="btn btn-prm" (click)="enableAddServer();">
+  Enable Add Server
+</button>
+<br/>
+
+{{ serverName }}
+{{displayName}}
+
+{{server}}
